@@ -41,6 +41,14 @@ public class Programa {
 		vendDao.insert(newVendedor);
 		System.out.println("INSERIDO !!! Novo ID = "+ newVendedor.getId());
 		
+		System.out.println("=========== 5 ==========");
+		System.out.println("\n=====TESTE 5: Update do Vendedor =====");
+		
+		vend = vendDao.findById(1);
+		vend.setNome("Martha Waine");
+		vendDao.update(vend);
+		
+		
 
 	}
 
